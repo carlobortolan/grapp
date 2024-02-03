@@ -1,0 +1,1 @@
+add_test(testv1 v1 testv1.cpp)

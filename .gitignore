@@ -1,32 +1,70 @@
-# Prerequisites
-*.d
+# editor-specific files
+\#*
+.#*
+*~
+.*.swp
 
-# Compiled Object files
-*.slo
-*.lo
+# ELF files
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
-
-# Executables
-*.exe
+*.so
 *.out
-*.app
+
+# python bytecode
+*.pyc
+*.pyo
+__pycache__
+*.pyd
+
+# MSVC files
+*.pdb
+*.dll
+*.exe
+
+# workflow
+*.orig
+/TODO.org
+
+# build system
+/bin
+/.bin
+/build
+/deps
+/.ccls-cache
+/.cache
+/cmake-build-*
+
+# CMake in-source builds
+CMakeLists.txt.user
+/DartConfiguration.tcl
+/Testing
+CTestTestfile.cmake
+CMakeFiles
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+
+# CMake + lsp
+/compile_commands.json
+
+# debugging
+callgrind.out.*
+perf.data*
+.gdb_history
+
+# code search
+/.ignore
+/.globalrc
+/GPATH
+/GRTAGS
+/GTAGS
+
+# IDEs
+.vscode
+.idea
+
+# Virtual Environments
+/.venv/
+
+# macOS
+.DS_Store
