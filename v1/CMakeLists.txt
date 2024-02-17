@@ -2,12 +2,13 @@
 
 # list all the headers of the module
 set(MODULE_HEADERS v1.h)
-
+# list all the code files of the module
+set(SOURCES engine.cpp nn.cpp)
 set(LIBRARY_NAME v1)
 set(EXECUTABLE_NAME runv1)
 
 # Define a library named v1 which contains the code of grapp/v1
-add_library(${LIBRARY_NAME} SHARED ${MODULE_HEADERS})
+add_library(${LIBRARY_NAME} ${SOURCES})
 
 # Register ${CMAKE CURRENT SOURCE DIR} as include directory for v1 so headers in that directory can be included via <headername.h>
 target_include_directories(${LIBRARY_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

@@ -1,0 +1,16 @@
+digraph ComputationalGraph {
+    node [shape=ellipse, style=filled, color=lightblue, fontname=Courier];
+    edge [fontname=Courier];
+
+    "0x7ffd87f465e0" [label="Node(value=0, grad_fn=1, op=+)"];
+    "0x560d3ba73250" -> "0x7ffd87f465e0";
+    "0x560d3ba73250" [label="Node(value=-8, grad_fn=0, op=*)"];
+    "0x560d3ba73130" -> "0x560d3ba73250";
+    "0x560d3ba73130" [label="Node(value=-4, grad_fn=0, op=)"];
+    "0x560d3ba731c0" -> "0x560d3ba73250";
+    "0x560d3ba731c0" [label="Node(value=2, grad_fn=0, op=)"];
+    "0x560d3ba73320" -> "0x7ffd87f465e0";
+    "0x560d3ba73320" [label="Node(value=8, grad_fn=0, op=^)"];
+    "0x560d3ba730a0" -> "0x560d3ba73320";
+    "0x560d3ba730a0" [label="Node(value=2, grad_fn=0, op=)"];
+}
